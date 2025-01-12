@@ -1,0 +1,163 @@
+body {
+	font-family: Verdana, sans-serif;
+	background-color: #f4f4f9;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h1 {
+	margin-top: 20px;
+	color: #333;
+	font-size: 2.5em;
+}
+
+/* Choose colors for letters */
+.letter-a { color: crimson; }
+.letter-b { color: dodgerblue; }
+.letter-c { color: saddlebrown; }
+.letter-d { color: mediumseagreen; }
+.letter-e { color: mediumorchid; }
+
+/* Style input fields with the same colors */
+input.letter-a { border-color: crimson; }
+input.letter-b { border-color: dodgerblue; }
+input.letter-c { border-color: saddlebrown; }
+input.letter-d { border-color: mediumseagreen; }
+input.letter-e { border-color: mediumorchid; }
+
+.controls {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.controls input {
+	width: 50px;
+	text-align: center;
+	border-radius: 5px;
+	border-width: 5px;
+	font-size: 16px;
+	padding: 4px;
+}
+
+.fitness-options {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 20px;
+	margin-top: 15px;
+	margin-bottom: 40px;
+}
+
+.fitness-options > div {
+	margin: 6px 0;
+}
+
+.fitness-options label {
+	margin-right: 5px;
+}
+
+button {
+	margin: 15px 5px;
+	padding: 10px 15px;
+	border: none;
+	background-color: #1f8646;
+	color: white;
+	font-size: 16px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+button:active,
+button.pressed {
+	background-color: #14532c;
+	transform: scale(0.95); /* Slightly shrinks the button */
+}
+
+.generation {
+	margin-bottom: 5px;
+	font-size: 24px;
+	font-weight: bold;
+	color: #333;
+}
+
+.slider-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 10px;
+}
+
+#speed-slider {
+	width: 250px;
+}
+
+#mutation-slider {
+	width: 125px;
+}
+
+.slider-container label {
+	font-size: 14px;
+	margin: 0;
+	color: #555;
+}
+
+#speed-display {
+	display: inline-block;
+	text-align: center;
+	width: 36px;
+}
+
+/* For the main grid of creatures: */
+.grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 10px;
+	width: 100%;
+	max-width: 1150px;
+	margin: auto;
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+.cell {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #ccc;
+	padding: 10px;
+	background-color: white;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	position: relative;
+}
+
+.cell-number {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	font-size: 12px;
+	color: #888;
+}
+
+.fitness {
+	margin-top: 5px;
+	font-size: 14px;
+	color: #555;
+}
+
+.string {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+/* Individual letters */
+.string span {
+	margin-right: 3px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.247);
+}
