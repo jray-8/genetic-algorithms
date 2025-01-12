@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Genetic Algorithm Visualizer</title>
+	<link rel="stylesheet" href="./visualizer.css">
+</head>
+<body>
+	<h1>Genetic Algorithm Visualizer</h1>
+
+	<div class="controls">
+		<div class="fitness-options">
+			<div>
+				<label for="fitness-a">Fitness for <span class="letter-a">a</span>:</label>
+				<input type="number" id="fitness-a" class="letter-a" value="1">
+			</div>
+			<div>
+				<label for="fitness-b">Fitness for <span class="letter-b">b</span>:</label>
+				<input type="number" id="fitness-b" class="letter-b" value="-1">
+			</div>
+			<div>
+				<label for="fitness-c">Fitness for <span class="letter-c">c</span>:</label>
+				<input type="number" id="fitness-c" class="letter-c" value="0">
+			</div>
+			<div>
+				<label for="fitness-d">Fitness for <span class="letter-d">d</span>:</label>
+				<input type="number" id="fitness-d" class="letter-d" value="2">
+			</div>
+			<div>
+				<label for="fitness-e">Fitness for <span class="letter-e">e</span>:</label>
+				<input type="number" id="fitness-e" class="letter-e" value="-2">
+			</div>
+
+			<div class="slider-container">
+				<input type="range" id="mutation-slider" min="0" max="1" value="0.1" step="0.01">
+				<label for="mutation-slider">Mutation Rate: <span id="mutation-display">0.1</span></label>
+			</div>
+		</div>
+
+		<div class="generation">Generation: <span id="generation">0</span></div>
+
+		<div class="slider-container">
+			<input type="range" id="speed-slider" min="1" max="10" value="2" step="0.1">
+			<label for="speed-slider">Generations/sec: <span id="speed-display">2</span></label>
+		</div>
+
+		<div>
+			<button id="evolve">Evolve</button>
+			<button id="pause">Pause</button>
+		</div>
+	</div>
+
+	<div class="grid">
+		<!-- 8 cells -->
+		<div class="cell" id="cell-1">
+			<div class="cell-number">1</div>
+			<div class="string" id="string-1">abcdeabcde</div>
+			<div class="fitness" id="fitness-1">Fitness: 0</div>
+		</div>
+		<div class="cell" id="cell-2">
+			<div class="cell-number">2</div>
+			<div class="string" id="string-2">abcdeabcde</div>
+			<div class="fitness" id="fitness-2">Fitness: 0</div>
+		</div>
+		<div class="cell" id="cell-3">
+			<div class="cell-number">3</div>
+			<div class="string" id="string-3">abcdeabcde</div>
+			<div class="fitness" id="fitness-3">Fitness: 0</div>
+		</div>
+		<div class="cell" id="cell-4">
+			<div class="cell-number">4</div>
+			<div class="string" id="string-4">abcdeabcde</div>
+			<div class="fitness" id="fitness-4">Fitness: 0</div>
+		</div>
+		<div class="cell" id="cell-5">
+			<div class="cell-number">5</div>
+			<div class="string" id="string-5">abcdeabcde</div>
+			<div class="fitness" id="fitness-5">Fitness: 0</div>
+		</div>
+		<div class="cell" id="cell-6">
+			<div class="cell-number">6</div>
+			<div class="string" id="string-6">abcdeabcde</div>
+			<div class="fitness" id="fitness-6">Fitness: 0</div>
+		</div>
+		<div class="cell" id="cell-7">
+			<div class="cell-number">7</div>
+			<div class="string" id="string-7">abcdeabcde</div>
+			<div class="fitness" id="fitness-7">Fitness: 0</div>
+		</div>
+		<div class="cell" id="cell-8">
+			<div class="cell-number">8</div>
+			<div class="string" id="string-8">abcdeabcde</div>
+			<div class="fitness" id="fitness-8">Fitness: 0</div>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
