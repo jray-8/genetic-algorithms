@@ -3,11 +3,14 @@ A general-purpose template for quickly adapting a genetic algorithm to suit to y
 
 ## How to Use:
 
-- _factory functions_ will allow you to create new types of chromosomes and species
-- chromosomes and organisms (of a species) will have all their parameters stored at the class level
-- instances, then, could be created with no args
-- objects will be lightweight and store only what sets them apart from others
-- use the `dir()` and `help()` functions to learn more about any classes
+- Factory functions will allow you to create new __types__ of chromosomes and species
+
+- Chromosomes and Organisms (of a species) will have all their parameters stored at the class-level
+    -  This allows instances to be created with no args
+
+- Objects will be lightweight and store only what sets them apart from other members of their own 
+
+- Use the `dir()` and `help()` functions to learn more about any classes
 
 #### 1. Create chromosome types for your species using the *factory functions*:
 
