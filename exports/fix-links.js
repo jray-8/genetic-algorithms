@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		const href = link.getAttribute('href');
 
 		if (href && href.startsWith('./pyvolver')) {
-			const updatedHref = '.' + href; // go back one directory
+			const updatedHref = 'https://github.com/jray-8/genetic-algorithms/tree/b38534c7031ae393b882e9faf5576596281ae832/pyvolver';
 			link.setAttribute('href', updatedHref);
 		}
 
